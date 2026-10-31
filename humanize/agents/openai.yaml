@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanize"
+  short_description: "Make writing clear, cohesive, and human"
+  default_prompt: "Use $humanize to edit this draft while preserving my voice."

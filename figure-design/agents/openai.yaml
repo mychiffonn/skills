@@ -1,0 +1,4 @@
+interface:
+  display_name: "Figure Design"
+  short_description: "Design and critique clean, accessible, venue-sized figures"
+  default_prompt: "Use $figure-design to design or critique a figure: right chart type, venue size, accessible color with redundant encoding, no chartjunk, takeaway visible without a caption."
