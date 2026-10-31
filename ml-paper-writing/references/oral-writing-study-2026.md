@@ -5,6 +5,11 @@ This study examines **five papers each from ICML, ACL, EMNLP, NeurIPS, and ICLR
 logical transitions within and across findings, and scoped contribution claims.
 The resulting drafting procedure is in [narrative-structure.md](narrative-structure.md).
 
+The [additional readability study](oral-readability-study.md) extends this
+evidence with seven different 2023–2024 oral papers, covering terminology,
+skim paths, restrained headings, and distinct figure roles. It distinguishes
+main-track papers from its separately identified position-track example.
+
 ## Sample and reading method
 
 This is a purposive sample spanning theory, methods, benchmarks, and empirical
@@ -12,8 +17,8 @@ analysis. It is not random, representative of each venue, or a ranking of the
 best writing. Existing cases were retained where they fit the revised scope;
 additional cases brought each venue to five. A candidate without accessible
 full text was replaced before analysis. Selection was not based on a writing
-score. The [sample manifest](oral-writing-sample-2026.json) records all 25 paper
-identities, oral selection sources, document versions, and passage locations.
+score. The paper notes below retain the 25 identities, examined text versions,
+and passage locations.
 
 For every paper, the reading examined its section sequence, contribution or
 scope statements, and connected main-text passages that show both paragraph
@@ -29,14 +34,11 @@ Main-track oral eligibility was checked against the official
 [EMNLP program](https://2026.emnlp.org/program/),
 [NeurIPS feed](https://neurips.cc/static/virtual/data/neurips-2026-orals-posters.json),
 and [ICLR feed](https://iclr.cc/static/virtual/data/iclr-2026-orals-posters.json).
-Auxiliary tracks and spotlight-only records are excluded. The larger
-[inventory](oral-papers-2026.csv) is a sampling aid; its unresolved NeurIPS census
-gap does not affect the five verified sample identities. Counting details remain
-in [oral-corpus-2026.json](oral-corpus-2026.json), outside the writing workflow.
+Auxiliary tracks and spotlight-only records are excluded.
 
 ACL and EMNLP texts use Anthology PDFs. Where OpenReview access was blocked,
 the other venues use matched author-submitted arXiv versions or an author's PDF.
-Exact text sources are pinned in the manifest; these can differ from the
+Exact text sources are linked in each paper's notes; these can differ from the
 camera-ready version. Oral selection identifies the cohort, not a guarantee
 that every wording choice in these versions is good.
 
@@ -358,5 +360,4 @@ The evidence does not justify venue-specific style rankings, universal section
 lengths, or claims that oral status measures prose quality. No matched poster
 control or reader-comprehension experiment was conducted. The rule prioritizing
 code-generated numerical macros and `.tex` tables is an author requirement for
-freshness, documented in [generated-results.md](generated-results.md); it is not
-an inference about how these 25 papers were implemented.
+freshness, not an inference about how these 25 papers were implemented.

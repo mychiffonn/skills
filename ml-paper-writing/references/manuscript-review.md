@@ -1,97 +1,96 @@
-# Required manuscript review
+# Review clarity, logic, and readability
 
-Run these passes before delivering drafted or revised manuscript text. For a
-small edit, inspect the changed passage and surrounding definitions and claims.
-For a full draft, cover the entire manuscript, including captions, tables,
-footnotes, appendices, and supplementary prose. A review-only request produces
-findings and suggested revisions; an editing request requires fixes.
+For a small revision, check the changed passage and the definitions and claims
+it affects. For a full manuscript, include captions, tables, footnotes,
+appendices, and supplementary prose. Fix issues within the requested scope;
+return critique alone only when that is the requested deliverable.
 
-## 1. Reconcile claims and evidence
+## 1. Read the skim path
 
-Map each stated contribution to a result section and its supporting evidence.
-Keep the evaluated setting, assumptions, comparison, and kind of evidence
-consistent across that map. Narrow unsupported promises.
+Read the abstract, introduction, headings, figures, and captions before the
+continuous body. Identify the question, approach, answer, evidence, and scope.
+These surfaces must tell the same scientific story at different levels of detail.
 
-Trace the abstract, introduction, section takeaways, captions, and conclusion
-to the private evidence map. Check numbers, denominators, comparisons, units,
-weighting, uncertainty, and scope. Separate observation, interpretation, and
-speculation. Check that a changed sentence preserves the scientific claim.
-Mark unresolved evidence gaps in working notes and disclose them at delivery.
-Regenerate numerical macros and `.tex` tables from the intended analysis inputs
-using [generated-results.md](generated-results.md). Check macro meaning as well
-as value, and replace hand-copied results where generation is available. A fresh
-export does not excuse a stale interpretation or an outdated caption.
+- Does the abstract stand alone without unexplained labels or hidden conditions?
+- Does the introduction explain the gap and design rationale rather than expand
+  the abstract into repeated summaries?
+- Can headings locate substantive questions or findings without overstating them?
+- Does each display add a distinct comparison or explanation? Reused context or
+  controls are useful; duplicated takeaways without added information are not.
+- Can captions orient the reader to conditions, encodings, measurement, and scope
+  without transcribing all values or depending on unexplained body terminology?
 
-## 2. Read the argument as continuous prose
+A coherent skim is not sufficient evidence that the full argument is connected.
 
-State the purpose of each paragraph in a few words privately. Split paragraphs
-that do unrelated jobs and remove paragraphs that add no evidence or reasoning.
-Check that setup precedes dependent results and that an essential premise is
-not hidden in an appendix. Compare revisions with the author's unmodified
-prose for voice, terminology, and level of formality.
+## 2. Read the argument continuously
 
-Read neighboring paragraph endings and openings together. Name the relation:
-control, inference, explanation, changed condition, or parallel comparison.
-Remove decorative connectives that conceal a missing relation. Check the
-transition between findings separately: the next analysis must address a
-specific unresolved question, use an established premise, test a prediction,
-or explicitly change the comparison axis. Do not force every finding to end
-with a caveat. See [narrative-structure.md](narrative-structure.md).
+Privately name each paragraph's purpose. Split unrelated jobs, join fragments
+that develop the same point, and remove repetition that adds no reasoning.
+A finding can span several paragraphs. Check that setup and indispensable
+premises precede the inferences that depend on them.
 
-## 3. Check terminology and definitions
+At each level, identify the actual relation:
 
-Inspect every necessary borrowed term, coined label, acronym, metric, and symbol
-against the terminology list. Verify that the first substantive use has a
-definition and that later uses keep the same meaning. Check standalone abstracts
-and captions separately. Replace unnecessary new labels with ordinary technical
-descriptions. Do not introduce a second name simply to avoid repetition.
+| Level | Check |
+|---|---|
+| Sentence to sentence | Explicit referent, familiar-to-new progression, stable comparison direction, no missing premise |
+| Paragraph to paragraph | Established object or finding leads to a control, interpretation, refinement, or named change of axis |
+| Result to result | Dependency, remaining question, prediction, boundary, parallel evidence, or synthesis—not an invented implication |
+| Section to section | Previous conclusion supplies the needed premise, or the next question and changed purpose are explicit |
+| Formal statement to prose | Purpose and assumptions before the statement; meaning and use afterward |
 
-## 4. Inspect every compound and paragraph ending
+Read each paragraph ending with the next opening. A “however” or “therefore”
+must express an existing relation, not stand in for one. Do not force every
+finding to end with a limitation or open question. See
+[narrative-structure.md](narrative-structure.md).
 
-Collect every hyphenated compound in new or revised prose and examine it in
-context. Keep established technical spellings, official names, and grammatical
-hyphens that prevent ambiguity. Rewrite unconventional or unnecessary compounds
-as clear phrases or clauses. Check rendered text because macros can hide labels
-and TeX can insert line-break hyphens. A search for hyphens finds candidates;
-it cannot decide which phrases are conventional.
+## 3. Check terminology and hierarchy
 
-Read all paragraph endings consecutively. For each hedge or concession, ask
-whether omitting it changes the claim's truth or interpretation. If it does,
-scope the claim or retain a precise local qualification. If it does not, remove
-it or consolidate the material in Limitations. Check that a repeated disclaimer
-has not replaced a useful scientific inference. Preserve necessary uncertainty.
+Inspect unfamiliar terms, coined labels, acronyms, metrics, and symbols. Remove
+those that do not earn their memory cost. Define necessary terms before they
+carry an inference; keep the same meaning and spelling across headings,
+abstracts, captions, body, and appendices. An expanded acronym alone does not
+explain a metric. Preserve distinctions between units and between constructs
+and measured proxies.
 
-## 5. Remove internal provenance
+Read headings alone for useful navigation, then hide local subheadings and
+read the prose. Merge one-paragraph subsections or repeated run-in labels when
+they interrupt one finding; retain short sections that are genuinely useful
+lookup destinations. Do not impose a heading quota or fixed paragraph length.
+Check that figure panels and prose use a common condition order.
 
-Inspect every manuscript part for repository references, paths, release files,
-filenames, internal versions, run identifiers, configuration keys, class or
-function names, implementation bookkeeping, and references to internal knowledge.
-Translate scientifically relevant operations into self-contained method
-descriptions. Remove incidental mechanics. Do not hide them in appendices.
+## 4. Reconcile claims and evidence
 
-Searches for path separators, file extensions, code formatting, run/version
-labels, and words such as “script,” “release,” or “repository” help find
-candidates. Inspect them semantically: a public dataset identifier, a cited
-software package, or an algorithm that studies code can be necessary scientific
-content. Internal artifact provenance is not. Keep required venue availability
-information concise and separate from scientific exposition.
+Match contributions to the evidence that establishes them. Check that abstract,
+result headings, captions, and conclusion preserve the same assumptions,
+populations, comparisons, and evidence strength. Separate observation,
+association, intervention, hypothesis, illustration, and theorem.
 
-## 6. Verify citations and presentation
+Verify numbers, units, denominators, aggregation, uncertainty, and statistical
+language against the source evidence. Prefer generated numerical macros and
+`.tex` tables for changeable analysis results; fresh values still require
+rechecking their interpretation. Verify each citation against the supporting
+primary passage, not merely bibliographic identity. Never repair a weak argument
+by inventing a control, result, source, or qualification.
 
-Apply [citation-workflow.md](citation-workflow.md) to added or changed references.
-Check that every citation supports its associated claim, not merely that the
-paper exists. Inspect undefined citations, broken cross-references, inconsistent
-names, unsupported precision, and captions that repeat nearby prose.
+## 5. Remove avoidable friction without changing meaning
 
-For LaTeX edits, compile and inspect the PDF using
-[latex-and-layout.md](latex-and-layout.md). A successful build does not establish
-readable layout or compliance with venue rules. If the toolchain is missing,
-report the checks that remain unavailable.
+- Inspect compounds and modifier stacks individually. Rewrite awkward inventions
+  as phrases or clauses; preserve established technical spelling, official names,
+  and hyphens that prevent ambiguity. Removing punctuation alone is not a repair.
+- Read paragraph endings together. Keep an inference, example, or needed bridge;
+  remove repetitive concessions and empty restatements. Scope the claim or retain
+  a local qualification when it changes the meaning; develop broader limits once.
+- Remove internal paths, run identifiers, configuration keys, code identifiers,
+  release bookkeeping, and development history from manuscript prose. Preserve
+  the actual scientific operation, settings, public identities, and required
+  software or availability information.
+- Preserve effective academic voice and cadence. Do not mechanically force active
+  voice, second person, short sentences, or synonyms for repeated technical terms.
+- Inspect the rendered manuscript when available: paragraph boundaries, heading
+  density, figure/caption placement, readable labels, equation references, and
+  cross-references. Source text alone does not prove layout readability.
 
-## Delivery criterion
-
-Deliver revised text after fixing violations within the requested scope. Do not
-describe a manuscript as ready if citations, claims, or mandatory checks remain
-unresolved. Keep the review record and artifact paths outside the manuscript.
-A short delivery note can identify substantive changes, unresolved scientific
-questions, and checks that could not be completed.
+Deliver the revised artifact and identify only consequential unresolved evidence
+or unavailable checks. Keep working provenance and the review record outside
+the manuscript. A clear sentence cannot repair missing scientific evidence.

@@ -1,17 +1,18 @@
 # Build the paper's argument and transitions
 
 Read this reference for a full manuscript, a section with multiple findings, or
-a revision of argument structure. It translates the
-[25-paper writing study](oral-writing-study-2026.md) into drafting decisions.
-The examples below are invented illustrations of prose structure, not research
-results. Adapt them to the evidence and the author's existing voice.
+revision of argument structure. It translates the
+[original writing study](oral-writing-study-2026.md) and
+[additional readability study](oral-readability-study.md) into drafting principles.
+The examples below are invented illustrations, not research results. Adapt them
+to the evidence and the author's existing voice.
 
 ## Plan sections around questions and dependencies
 
 Write a compact outline in private working notes. For each section or major
 finding, identify its question, the premise or definition it needs, its decisive
 evidence, its supported conclusion, and its role in the overall contribution.
-Reuse the evidence map from [repo-to-manuscript.md](repo-to-manuscript.md).
+Keep this outline as working notes, not extra prose the reader must navigate.
 
 Order the argument so that readers can evaluate each claim when they encounter
 it. Useful structures include:
@@ -37,6 +38,19 @@ A useful roadmap explains why the order matters: establish a measurement,
 answer the main question, then test an explanation or extend the setting.
 Do not replace that explanation with a list of subsection numbers.
 
+Use headings at meaningful changes of question or evidence role. A short
+continuation usually needs a topic sentence, not another subsection. Keep
+paragraphs that develop one finding together; repeated run-in labels can
+fragment the argument even without numbered headings. A useful check is to
+read the section with its subheadings hidden: headings should help navigation,
+not substitute for the relations between paragraphs.
+
+Plan the skim path alongside the outline. The abstract states the answer, the
+introduction explains its importance and rationale, headings locate its parts,
+and figures expose the comparisons. All must preserve the same concepts and
+scope. A reader should not discover an indispensable restriction only after
+reading a broader claim in a heading or caption.
+
 ## Develop a finding across purposeful paragraphs
 
 A finding can require several paragraphs. Preserve one scientific question while
@@ -55,13 +69,21 @@ For example, an analysis of an apparent gain might proceed as follows:
 
 Use only the roles the finding needs, in the order it needs them. Do not invent
 a control or an explanation to complete this shape. Report the few numbers that
-establish the pattern, using generated macros where available, and leave exact
-secondary values in a table. Interpret the comparison instead of narrating cells.
+establish the pattern and leave exact secondary values in a table. Interpret
+the comparison instead of narrating cells.
 
 When a result is unexpected, establish the expectation or reference first so
 that the reader can understand the contrast. When a secondary analysis tests an
 explanation, state the prediction that would distinguish that explanation from
 an alternative before reporting the evidence.
+
+Within each paragraph, carry a known object or conclusion into the next
+sentence before adding a new distinction. Keep referents explicit, comparison
+direction stable, and assumptions beside the step that uses them. A sequence
+of equations needs the same continuity: why this operation, what it produces,
+and how that output supports the next step. The partition-function derivation
+in [R3](oral-readability-study.md#r3) illustrates this; it is not a license to
+omit assumptions or describe an approximation as exact.
 
 ## Connect neighboring paragraphs
 
@@ -117,6 +139,35 @@ open question, future-work sentence, or promise of another experiment. Preserve
 local qualifications that change the inference; consolidate general limits in
 Limitations, following [writing-guide.md](writing-guide.md).
 
+For a transition into a new section, recall only the established result the new
+question needs, then name what changes and why. Do not summarize the whole
+previous section again. A theorem-to-method transition explains which condition
+becomes a design requirement; a result-to-discussion transition synthesizes what
+the evidence jointly supports rather than introducing an untested mechanism.
+The decoder-to-encoder progression in [R5](oral-readability-study.md#r5)
+shows how a remaining requirement motivates the next formal step.
+
+## Align figures with the textual argument
+
+For each display, state its question, supported takeaway, and what it adds
+beyond previous displays. Order it where that contribution belongs in the
+argument. A setup diagram, proof map, quantitative comparison, and boundary
+analysis can share context while answering different questions.
+
+Merge redundant takeaways or move secondary detail out of the main path.
+Do not interpret “non-overlapping figures” as a ban on repeated controls,
+shared datasets, or a common visual vocabulary. Keep the condition and panel
+order aligned with the prose. A useful reuse makes a new comparison easier;
+a redundant figure merely makes the same claim again.
+
+Read figures and captions in sequence without the body. Can the reader recover
+the evidence path, distinguish illustration from measurement, and identify the
+scope? Then read the body without the displays: does it explain why those
+comparisons were made and what follows? Use
+[writing-guide.md](writing-guide.md) for caption and skim-path principles and
+the [figure-design companion](../../figure-design/SKILL.md) for visual redesign.
+
+
 ## State contributions at the strength and scope of the evidence
 
 For each contribution, identify the action or result, its scientific object,
@@ -164,8 +215,8 @@ established more strongly than the other.
 In synthesis, explain what the findings jointly establish, which explanations
 they distinguish, and what follows for the central question. Avoid a conclusion
 that merely repeats the largest numbers or claims an untested generalization.
-Regenerate reported macros and `.tex` tables before checking whether these
-sentences still match the evidence; see [generated-results.md](generated-results.md).
+Reconcile reported values and their interpretation against the same evidence
+before checking that these sentences still match the findings.
 
 Before delivery, perform the contribution-to-evidence and paragraph-transition
 checks in [manuscript-review.md](manuscript-review.md).
